@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:titleTextColor="@color/colorPrimaryDark"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageofcapt"
+                android:src="@drawable/captain"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="6dp"
+                />
+
+            <TextView
+                android:id="@+id/captainname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/imageofcapt"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/captain_america"
+                android:textColor="#800000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailofcapt"
+                android:layout_below="@id/captainname"
+                android:layout_toEndOf="@id/imageofcapt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/captamerica_gmail_com"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_below="@id/emailofcapt"
+                android:layout_toEndOf="@id/imageofcapt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARVEL"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageofironman"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/irnman"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="6dp"
+                />
+
+            <TextView
+                android:id="@+id/ironmanname"
+                android:layout_toEndOf="@id/imageofironman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iron Man"
+                android:textColor="#800000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:id="@+id/emailofironman"
+                android:layout_below="@id/ironmanname"
+                android:layout_toEndOf="@id/imageofironman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ironman@gmail.com"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_below="@id/emailofironman"
+                android:layout_toEndOf="@id/imageofironman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARVEL"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageofbatman"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/batman"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="6dp"
+                />
+
+            <TextView
+                android:id="@+id/batmanname"
+                android:layout_toEndOf="@id/imageofbatman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bat Man"
+                android:textColor="#800000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:id="@+id/emailofbatman"
+                android:layout_below="@id/batmanname"
+                android:layout_toEndOf="@id/imageofbatman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="batman@gmail.com"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_below="@id/emailofbatman"
+                android:layout_toEndOf="@id/imageofbatman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DC"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageofsuperman"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/superman"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="6dp"
+                />
+
+            <TextView
+                android:id="@+id/supermanname"
+                android:layout_toEndOf="@id/imageofsuperman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Super Man"
+                android:textColor="#800000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:id="@+id/emailofsuperman"
+                android:layout_below="@id/supermanname"
+                android:layout_toEndOf="@id/imageofsuperman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="superman@gmail.com"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_below="@id/emailofsuperman"
+                android:layout_toEndOf="@id/imageofsuperman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DC"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageofblackpanther"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/blackpnth"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="6dp"
+                />
+
+            <TextView
+                android:id="@+id/panthername"
+                android:layout_toEndOf="@id/imageofblackpanther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black panther"
+                android:textColor="#800000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:id="@+id/emailofpanther"
+                android:layout_below="@id/panthername"
+                android:layout_toEndOf="@id/imageofblackpanther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="panther@gmail.com"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_below="@id/emailofpanther"
+                android:layout_toEndOf="@id/imageofblackpanther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARVEL"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

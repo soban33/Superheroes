@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:titleTextColor="@color/colorPrimaryDark"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:layout_below="@id/mainAppBar"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super Heroes"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#800000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat"
+        />
+
+    <EditText
+        android:id="@+id/yourid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:layout_margin="15dp"
+        android:hint="enter your id"
+        android:fontFamily="@font/montserrat"
+        />
+
+    <EditText
+        android:id="@+id/yourpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/yourid"
+        android:layout_margin="15dp"
+        android:hint="enter your password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/montserrat"
+        />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/yourpass"
+        android:layout_margin="20dp"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="#800000"
+        android:fontFamily="@font/montserrat"
+        />
+
+    <TextView
+        android:id="@+id/noAccnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="don't have an account?sign in"
+        android:layout_below="@id/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot password"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+</RelativeLayout>
